@@ -8,6 +8,7 @@
   - type: Pullable
   - type: Sprite
     noRot: true
+    offset: "0.0,-0.1"
     drawdepth: Mobs
     sprite: DeltaV/Structures/Machines/roboisseur.rsi
     layers:
@@ -28,3 +29,16 @@
     attributes:
       gender: male
       proper: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.18,-0.09,0.18,0.18"
+        mask: 
+        - TableMask
+        layer:
+        - TableLayer
+        
+  - type: Transform
+    noRot: true
